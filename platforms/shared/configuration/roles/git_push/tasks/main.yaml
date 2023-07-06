@@ -29,7 +29,7 @@
     fi  
     
     git --git-dir={{ GIT_DIR }}/.git commit -s -m "{{ msg }}" || true
-    git --git-dir={{ GIT_DIR }}/.git push {{ gitops.git_url }} HEAD:{{ gitops.branch }}  
+    git --git-dir={{ GIT_DIR }}/.git push --force {{ gitops.git_url }} HEAD:{{ gitops.branch }}  
   register: GIT_OUTPUT_SSH
   when: 
   - gitops.git_protocol is defined 
