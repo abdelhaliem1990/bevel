@@ -22,8 +22,8 @@
 
 # Delete the generic network resources from kuberentes 
 #- import_playbook: delete-network.yaml
-#  when:
-#    - reset is defined and reset == 'true'
+ # when:
+  #  - reset is defined and reset == 'true'
 
 ############################################
 # Playbook for Hypelerger Fabric Operations
